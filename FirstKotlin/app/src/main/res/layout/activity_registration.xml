@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/fullNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Full Name (Ex. Juan Dela Cruz)"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/fonts"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Email"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/fonts"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="25dp"
+                android:padding="10dp"
+                android:textColorHint="@color/fonts"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/phoneNumberRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Phone Number"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/fonts"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/regionRegister"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/login_edit_background"
+                    android:hint="Region"
+                    android:padding="10dp"
+                    android:paddingStart="25dp"
+                    android:textColorHint="@color/fonts"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cityRegister"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/login_edit_background"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:paddingStart="25dp"
+                    android:textColorHint="@color/fonts"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/address1Register"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Address 1"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/fonts"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/address2Register"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/login_edit_background"
+                android:hint="Address 2"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:textColorHint="@color/fonts"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Register"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

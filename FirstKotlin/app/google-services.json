@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "30138933407",
+    "project_id": "halaman-prototype",
+    "storage_bucket": "halaman-prototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30138933407:android:4cf9f9c9fe2683dbe902aa",
+        "android_client_info": {
+          "package_name": "com.example.firstkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30138933407-9sopps3ek1hekn14qb2hl5pbt1ss2eca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL03bv0_95QGjX0pYDxGbd1x2XPTlh9fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30138933407-9sopps3ek1hekn14qb2hl5pbt1ss2eca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
