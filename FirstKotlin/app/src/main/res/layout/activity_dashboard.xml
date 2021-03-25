@@ -28,48 +28,375 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/completeNameDisplay"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="132dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="15dp"
-                    android:background="@drawable/dashboard_modules"
-                    android:padding="10dp"
-                    android:paddingStart="25dp"
-                    android:text="Juan Dela Cruz"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:layout_height="250dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="132dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="15dp"
-                    android:background="@drawable/dashboard_modules"
-                    android:padding="10dp"
-                    android:paddingStart="25dp"
-                    android:text="Best Crop for March"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/constraintLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:background="@drawable/dashboard_modules"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    tools:ignore="MissingConstraints"
+                                    tools:layout_editor_absoluteX="15dp">
 
-                <TextView
+                                    <ImageView
+                                        android:id="@+id/imageView"
+                                        android:layout_width="68dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/profilepic"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+                                        android:id="@+id/completeNameDisplay"
+                                        android:layout_width="200dp"
+                                        android:layout_height="46dp"
+                                        android:layout_marginStart="6dp"
+                                        android:layout_marginTop="8dp"
+                                        android:paddingTop="10dp"
+                                        android:paddingStart="5dp"
+                                        android:text="Juan Dela Cruz"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+                                        android:id="@+id/addressDisplay"
+                                        android:layout_width="199dp"
+                                        android:layout_height="19dp"
+                                        android:layout_marginStart="4dp"
+                                        android:paddingStart="5dp"
+                                        android:text="Babag, Lapu-Lapu City"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp"
+                                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                                        app:layout_constraintTop_toBottomOf="@+id/completeNameDisplay"
+                                        tools:ignore="MissingConstraints" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/dashboard_modules"
+                                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                                    tools:layout_editor_absoluteX="-1dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="15dp">
+
+                                    <TextView
+                                        android:layout_width="81dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginTop="10dp"
+                                        android:paddingStart="5dp"
+                                        android:text="Q1"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintStart_toEndOf="@+id/monthDisplay"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+                                        android:id="@+id/monthDisplay"
+                                        android:layout_width="114dp"
+                                        android:layout_height="26dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Best Crop for"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+                                        android:id="@+id/productDisplay"
+                                        android:layout_width="166dp"
+                                        android:layout_height="45dp"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="Yellow Corn"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="30dp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+
+                                        android:id="@+id/textView2"
+                                        android:layout_width="17dp"
+                                        android:layout_height="51dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="."
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/productDisplay"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+                                        android:id="@+id/yieldDisplay"
+                                        android:layout_width="63dp"
+                                        android:layout_height="45dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="56%"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="30dp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                                        tools:ignore="MissingConstraints" />
+
+                                    <TextView
+
+                                        android:layout_width="37dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="(?)"
+                                        android:textColor="@color/black"
+                                        android:textSize="30dp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintStart_toEndOf="@+id/yieldDisplay"
+                                        tools:ignore="MissingConstraints" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="163dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="end">
+
+                            <ImageView
+                                android:layout_width="167dp"
+                                android:layout_height="140dp"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/yellowcorn" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="416dp"
                     android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:background="@drawable/dashboard_modules"
-                    android:padding="10dp"
-                    android:paddingStart="25dp"
-                    android:text="Cropify"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:background="@drawable/dashboard_modules">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:paddingStart="25dp"
+                        android:text="Cropify"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="150dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="25dp"
+                        android:text="Last Year (March 2020)"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/textView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="143dp"
+                        android:layout_height="143dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/stats"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Humidity"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.507"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:text="74%"
+                            android:textColor="@color/black"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="143dp"
+                        android:layout_height="143dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/stats"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Temperature"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.507"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:text="36 C"
+                            android:textColor="@color/black"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="143dp"
+                        android:layout_height="143dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/stats"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Rain Concentration"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.507"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:text="40mm"
+                            android:textColor="@color/black"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="143dp"
+                        android:layout_height="143dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/stats"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+                        app:layout_constraintVertical_bias="0.428">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Sun Coverage"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.507"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:text="12 h/d"
+                            android:textColor="@color/black"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 <TextView
                     android:id="@+id/satView1"
@@ -96,7 +423,7 @@
                     android:padding="10dp"
                     android:paddingStart="25dp"
                     android:paddingEnd="25dp"
-                    android:src="@drawable/satellite"
+                    android:src="@drawable/map"
                     android:text="Satellite View of Yellow Corn"
                     android:textColor="@color/black"
                     android:textSize="20sp"
