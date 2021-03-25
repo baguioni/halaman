@@ -47,6 +47,11 @@ class dashboard : AppCompatActivity() {
             true
         }
 
+        satView1.setOnClickListener {
+            val intent = Intent(this@dashboard, SatView::class.java)
+            startActivity(intent)
+        }
+
         satView.setOnClickListener {
             val intent = Intent(this@dashboard, SatView::class.java)
             startActivity(intent)

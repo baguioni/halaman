@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         registerText.setOnClickListener {
             val intent = Intent(this@MainActivity, registration::class.java)
             startActivity(intent)
-            finish()
         }
     }
 }
