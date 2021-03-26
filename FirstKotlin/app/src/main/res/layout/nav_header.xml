@@ -19,6 +19,10 @@
         android:id="@+id/emailDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="jdcruz@gmail.com"
+        android:textStyle="bold
+"
+        android:textColor="@color/colorPrimary"
         android:paddingTop="8dp"
         android:textSize="15dp"/>
 
